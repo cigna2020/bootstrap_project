@@ -2,54 +2,175 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/project_2_bootstrap/bootstrap_project/src/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="/project_2_bootstrap/bootstrap_project/src/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="/project_2_bootstrap/bootstrap_project/src/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Uber</title>
 </head>
 
 <body>
+  <section class="main_section">
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="menu">
+            <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Со своим автомобилем</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">На автомобиле компании</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Требования</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Контакты</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Оставить заявку</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-  <header>
+      <div class="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 offset-md-1">
+              <a href="#" class="subheader_logo"><img src="img/uber_logo_full.png" alt="uber logo" /></a>
 
-    <nav>
-      <div class="container">
-        <ul class="menu">
-          <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
-        </ul>
+              <div class="subheader_text">
+                Официальный партнер Uber в Москве
+              </div>
+            </div>
+
+            <div class="col-md-2 offset-md-2">
+              <div class="subheader_call">Звоните нам ежедневно</div>
+              <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
+            </div>
+
+            <div class="col-md-2">
+              <button class="subheader_btn">заказать звонок</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="subheader">
+    <section class="promo">
       <div class="container">
         <div class="row">
-
-          <div class="col-md-4 offset-md-1">
-            <a href="#" class="subheader_logo"><img src="/project_2_bootstrap/bootstrap_project/img/uber_logo_full.png"
-                alt="uber logo"></a>
-            <div class="subheader_text">Официальный партнер Uber в Москве</div>
+          <div class="col-md-10 offset-md-1">
+            <h1 class="promo_header">
+              КОМПАНИЯ UBER PARTNERS!
+            </h1>
+            <h2 class="promo_subheader">
+              ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
+            </h2>
+            <div class="promo_text">
+              Компания UBER динамически развивающаяся. Компания на рынке
+              занимает лидирующее место среди таксомоторных компаний, Компания
+              абсолютно прозрачная вы можете контролировать все процессы у себя
+              в личном кабинете. Бонуcная система.Помимо выполненной работы по
+              заказам, компания начисляет бонусы за пиковое время.
+              <br /><br />
+              Мы одни из партнеров и зарекомендовали себя как одна из лучших
+              команд в городе Москве. Водители у нас зарабатывают от 80000-
+              120000 в месяц.
+            </div>
+            <button class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
           </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- /main_section -->
 
-          <div class="col-md-2 offset-md-2">
-            <div class="subheader_call">Звоните нам ежедневно</div>
-            <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
+  <section class="reasones">
+    <div class="container">
+      <div class="advantage">преимущества</div>
+      <div class="header_reasones">8 причин начать работать с нами</div>
+      <div class="row">
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/1_purse.png" alt="purse"></div>
+          <div class="reason_text">
+            <div class="subtitle_reason">Никаких наличных, оплата
+              происходит автоматически</div>
+            Стоимость поездки оплачивается пассажиром с привязанной банковской карты,
+            т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не
+            нужноискать мелкие деньги для размена.
           </div>
-          <div class="col-md-2">
-            <button class="subheader_btn">заказать звонок</button>
+        </div>
+
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/2_board.png" alt="purse"></div>
+          <div class="reason_text right">
+            <div class="subtitle_reason">Комиссия 8% + БОНУСЫ</div>
+            У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют
+            бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/3_money.png" alt="purse"></div>
+          <div class="reason_text">
+            <div class="subtitle_reason">Высокий доход с гарантированными выплатами</div>
+            Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить
+            налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/4_date.png" alt="purse"></div>
+          <div class="reason_text right">
+            <div class="subtitle_reason">Работа в удобное время, никаких графиков</div>
+            Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с
+            линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/5_key.png" alt="purse"></div>
+          <div class="reason_text">
+            <div class="subtitle_reason">Комфортное, прозрачное и простое подключение</div>
+            Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии
+            документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать
+            работать!
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/6_map.png" alt="purse"></div>
+          <div class="reason_text right">
+            <div class="subtitle_reason">Всегда большое количество заказов</div>
+            Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не
+            будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых
+            приятно возить.
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/7_phone.png" alt="purse"></div>
+          <div class="reason_text">
+            <div class="subtitle_reason">Круглосуточная поддержка</div>
+            В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда
+            можете задать вопрос через On-line консультацию.
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="reason_img"><img src="img/logo_block_2/8_car.png" alt="purse"></div>
+          <div class="reason_text right">
+            <div class="subtitle_reason">Без шашечек и наклеек</div>
+            Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-  </header>
 
 </body>
 
