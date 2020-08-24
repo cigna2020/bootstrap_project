@@ -1,12 +1,22 @@
 *
     font-family: "Roboto", sans-serif
+    margin: 0
+    padding: 0
 
 $bgc_menu: #212121
 $white_color: #fff
+$main_color: #1eacc7
+$second_color: #ff5656
 
 @mixin center_upper
     text-align: center
     text-transform: uppercase
+
+@mixin btn_hover
+    &:hover
+        background-image: none
+        background-color: $bgc_menu
+        transition: 1s    
     
 
 .main_section
@@ -86,6 +96,7 @@ nav
     font-size: 14px
     color: $white_color
     @include center_upper
+    @include btn_hover
 
 .promo
     padding: 183px 0 135px 0
@@ -127,6 +138,7 @@ nav
     font-size: 18px
     text-align: center
     color: $white_color
+    @include btn_hover
 
 .reasones
     margin-top: 71px
@@ -160,7 +172,7 @@ nav
     margin-left: 35px
     width: 113px
     height: 113px
-    background-color: #1eacc7
+    background-color: $main_color
     border-radius: 100%
     justify-content: center
     align-items: center
@@ -180,7 +192,7 @@ nav
 .subtitle_reason
     font-size: 17px
     font-weight: normal
-    color: #1eacc7
+    color: $main_color
 
 .subtitle
     margin-top: 19px
@@ -219,7 +231,25 @@ nav
             background-color: #000000
             border-radius: 100%
             cursor: pointer
-
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main_color
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                height: 14px
+                width: 2px
+                background-color: $main_color
+            &:hover
+                &:before, &:after
+                    background-color: $second_color
+                    transition: 1s
         &_1
             background: url('../img/1_order.png') center (center / cover) no-repeat
         &_2
@@ -266,3 +296,140 @@ nav
         line-height: 1.41
         text-align: center
         color: #222222
+
+.require
+    padding: 68px 0 84px
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0
+    &_title
+        font-size: 22px
+        color: #1ca8c3
+    &_subtitle
+        padding-right: 60px
+        font-size: 17px
+        color: #1ca8c3
+
+    &_list
+        padding-left: 50px
+        padding-right: 55px
+        margin-top: 20px
+        list-style-type: none
+        li 
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            text-align: left
+            color: #222222
+            margin-bottom: 10px
+            &:before 
+                content: ''
+                display: block
+                position: absolute
+                left: -33px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../img/sign_blue.png') center (center / cover) no-repeat
+    .warning
+        .require_title
+            color: $second_color
+        .require_list
+            li
+                &:before
+                    background: url('../img/sign_red.png') center (center / cover) no-repeat
+.world
+    min-height: 717px
+    padding: 49px 0
+    position: relative
+    background: url('../img/bg_map_full.jpg')
+    &_link
+        position: absolute
+        text-transform: uppercase
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+
+.footer
+    min-height: 155px
+    &_flex
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+        & > div
+            width: 33%
+            &:nth-child(3)
+                display: flex
+                justify-content: flex-end
+.blue_line
+    display: block
+    width: 299px
+    height: 4px
+    margin: 0 auto
+    margin-top: 14px
+    background-color: #1fbad6
+                
+.social
+    display: flex
+    &_item
+        display: flex
+        height: 32px
+        width: 32px
+        background-color: #111
+        align-items: center
+        justify-content: center
+        border-radius: 100%
+        margin: 0 4px
+        &:first-child
+            margin-left: 23px
+        i 
+            color: #fff
+    
+
+        
+.main_link
+    display: flex
+    justify-content: space-between
+    padding: 0 56px
+    & > a
+        font-size: 15px
+        font-weight: 300
+        color: #070716
+        text-transform: uppercase
+.second_link
+    display: flex
+    justify-content: space-between
+    & > a 
+        margin-top: 15px
+        font-size: 11px
+        font-weight: 300
+        color: #999999
+        text-transform: uppercase
+.language
+    display: flex
+    justify-content: center
+    & > a 
+        font-size: 11px
+        margin-top: 19px
+        text-align: center
+        text-transform: uppercase
+        color: #1fbad6
+
+
+.footer_app
+    display: flex
+    justify-content: flex-end
+    margin-right: 20px
+
+.footer_block
+    height: 10px
+    background-color: #111
+
+
+
+
+
+
+
