@@ -1,8 +1,10 @@
 @media (max-width: 1200px)
-    .menu_item
-        padding: 0 10px
-    .menu_link
-        font-size: 14px
+    .menu
+        padding: 12px 0
+        &_item
+            padding: 0 5px
+        &_link
+            font-size: 14px
     .promo
         padding: 60px 0
         min-height: 700px
@@ -17,3 +19,79 @@
             width: 20%
         &_link
             width: 400px
+
+
+@media (max-width: 767px)
+    .menu
+        padding: 12px 0
+        &_item
+            padding: 0 5px
+    .mobile_item
+        width: 220px
+        height: 240px
+        &_subtitle
+            font-size: 18px
+    .footer_app
+        display: none
+    .social
+        display: none
+    .subheader
+        &_text
+            font-size: 11px
+        &_btn
+            width: 150px
+    .reason
+        &_img
+            position: relative
+            margin: 0 auto
+            margin-bottom: 10px
+        &_text
+            margin-left: 40px
+    .header_reasones
+        font-size: 35px
+    
+    @media (max-width: 576px)
+        .menu
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 20px 15px
+            background-color: rgba(0, 0, 0, .8)
+            transition: .8s 
+            &_active
+                left: 0
+            &_item
+                padding-right: 0
+                border: 0
+                margin: 10px 0
+            &_link
+                font-size: 20px
+        .hamburger
+            display: block
+            position: absolute
+            width: 30px
+            height: 12px
+            right: 10px
+            top: 20px
+            span
+                display: block
+                width: 100%
+                background-color: #fff
+                height: 2px
+                margin-bottom: 2px
+                transition: 0.8s all
+            &_active
+                span
+                    margin: -2px
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: rotate(45deg)
+            
+        
