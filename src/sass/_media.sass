@@ -49,6 +49,9 @@
             margin-left: 40px
     .header_reasones
         font-size: 35px
+    .car
+        display: none
+
     
     @media (max-width: 576px)
         .menu
@@ -64,12 +67,17 @@
             transition: .8s 
             &_active
                 left: 0
+                width: 85%
             &_item
                 padding-right: 0
                 border: 0
                 margin: 10px 0
+                width: 100%
+                text-align: center
             &_link
                 font-size: 20px
+                display: block
+                text-align: center
         .hamburger
             display: block
             position: absolute
@@ -93,5 +101,15 @@
                         display: none
                     &:nth-child(3)
                         transform: rotate(45deg)
-            
+        .footer
+            display: none
+        .subheader_btn
+            &:hover
+                background-color: $main_color
+                transition: 0s
+        .promo_btn
+            &:hover
+                background-color: $main_color
+                transition: 0s
+
         
